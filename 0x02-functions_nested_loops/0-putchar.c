@@ -1,10 +1,14 @@
 #include "main.h"
+
+
+
 /**
- * main - print _putchar
- * is written by Njiraini Kennedy
- * Return: 0
- */
+* main - Print _putchar
+* Return: Always 0
+**/
+
 int main(void)
+
 {
 
 	_putchar('_');
