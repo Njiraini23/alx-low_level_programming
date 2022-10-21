@@ -7,10 +7,10 @@ int main(void)
 {
 	int i;
 
-/*error*/	printf("Infinite loop incoming :(\n");
+	printf("Infinite loop incoming :(\n");
 	i = 0;
-
 	while (i < 10)
+/*checks whether i is less than 10*/
 	{
 		putchar(i);
 	}
