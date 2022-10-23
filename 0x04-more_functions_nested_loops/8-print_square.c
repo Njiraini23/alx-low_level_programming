@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 /**
 *print_square -to print squares and new lines
 *@size: sizeof the square
