@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "main.h"
 /**
 *main -print Fizz for multiples of 3
 *	print Buzz for multiples of 5
@@ -17,15 +18,15 @@ int main(void)
 			if (i == 100)
 			{
 				printf("Buzz");
-				printif("\n");
+				printf("\n");
 			}
 		else
 			printf("Buzz");
 		}
 		else if (i % 3 == 0)
-			printif("Fizz ");
+			printf("Fizz ");
 		else
-			printif("%d ", i);
+			printf("%d ", i);
 		i++;
 	}
 return (0);
