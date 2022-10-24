@@ -15,21 +15,17 @@ int main(void)
 			printf("FizzBuzz ");
 		else if (i % 5 == 0)
 		{
-			if (i == 100)
-			{
-				printf("Buzz");
-				printf("\n");
-			}
-		else
-			printf("Buzz");
+			printf("Buzz ");
 		}
+	}
 		else if (i % 3 == 0)
 			printf("Fizz ");
 		else
-			printf("%d ", i);
+		{
+		printf("%d ", i);
+		}
 		i++;
-	}
-return (0);
+		return (0);
 }
 
 
