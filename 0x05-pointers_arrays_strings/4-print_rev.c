@@ -4,7 +4,7 @@
 * @s: char array string type
 *
 */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i;
 
