@@ -2,21 +2,20 @@
 /**
 *rev_string -reverses a string
 *@s: the array string to be reversed
+*Return: 0 for success
 */
 
 void rev_string(char *s)
 {
-	int i, c, l;
-	char h;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-		;
-	l = i;
-	for (i--, c = 0; c < 1 / 2; i--, c++)
+	while (*(s + i))
+		i++;
+	i = i - 1;
+	while (i >= 0)
 	{
-		h = s[c];
-		s[c] = s[i];
-		s[i] = h;
+		_putchar(*(s + i));
+		i--;
 	}
+	_putchar('\n');
 }
-
