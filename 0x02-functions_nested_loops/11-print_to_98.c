@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *print_to_98 -prints allnatural numbers
 *up to 98 separate them by comma and space
