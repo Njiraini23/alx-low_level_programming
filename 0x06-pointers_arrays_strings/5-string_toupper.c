@@ -1,16 +1,21 @@
 #include "main.h"
 /**
 *string_toupper - converts strings to upper
-*@word: pointer for argument 1
+*@s: pointer for argument 1
 *Return: strings in upper case
 */
-char *string_toupper(char *word)
+char *string_toupper(char *s)
 {
 	int i;
 
-	for (i = 0; word[i] != '\0'; i++)
+i = 0;
+	while (*(s + i))
 	{
-		if (word[i] > 96 && word[i] < 123)
-			word[i] -= 32;
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+			*(s + i) -= 'a' - 'A';
+		i++;
 	}
+	return (s);
 }
+
+
