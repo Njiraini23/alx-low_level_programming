@@ -5,7 +5,7 @@
 *@s2: pointer 2
 *Return: positive, negative or zero
 */
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
