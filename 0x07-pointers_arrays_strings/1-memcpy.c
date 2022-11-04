@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 /**
 *_memcpy - to copy a memory area copies n bytesfrom the memory* area dest
 *@n: functional copies
