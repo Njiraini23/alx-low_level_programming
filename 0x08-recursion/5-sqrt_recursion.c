@@ -2,22 +2,22 @@
 /**
 * check -square root
 * @a:int
-* @n:int
+* @b:int
 * _sqrt_recursion - returns the natural square root of a number
 *
 *Return: int
 */
-int check(int a, int n)
+int check(int a, int b)
 {
-	if (a * a == n)
+	if (a * a == b)
 	{
 		return (a);
 	}
-	if (a * a > n)
+	if (a * a > b)
 	{
 		return (-1);
 
-		return (check(a + 1, n));
+		return (check(a + 1, b));
 	}
 }
 /**
