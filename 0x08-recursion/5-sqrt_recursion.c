@@ -1,14 +1,13 @@
 #include "main.h"
 /**
-*
-*@checker:helper
+* check -square root
 * @a:int
-* @b:int
-*_sqrt_recursion - returns the natural square root of a number
+* @n:int
+* _sqrt_recursion - returns the natural square root of a number
 *
 *Return: int
 */
-int checker(int a, int n)
+int check(int a, int n)
 {
 	if (a * a == n)
 	{
@@ -17,10 +16,8 @@ int checker(int a, int n)
 	if (a * a > n)
 	{
 		return (-1);
-	}
-	else
-	{
-		return (cheker(a + 1, n));
+
+		return (check(a + 1, n));
 	}
 }
 /**
@@ -30,5 +27,7 @@ int checker(int a, int n)
 */
 int _sqrt_recursion(int n)
 {
-	return (checker(1, n));
+	if (n == 0)
+		return (0);
+	return (check(1, n));
 }
