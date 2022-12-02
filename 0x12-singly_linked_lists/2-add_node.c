@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-include "lists.h"
+#include "lists.h"
 
 /**
 *_strlen -returns the length of a string
@@ -20,7 +20,7 @@ int _strlen(const char *s)
 }
 
 /*
-* add_node - add a new node at the begining of a list
+*add_node -add a new node at the begining of a list_t list
 *@head: the head of a list
 *@str: the value to be inserted in the element
 *Return: the number of nodes
@@ -32,7 +32,7 @@ list_t *add_node(list_t **head, const char *str)
 	add = malloc(sizeof(list_t));
 	if (add == NULL)
 		return (NULL);
-	
+
 	add->str = strdup(str);
 
 	add->len = _strlen(str);
