@@ -1,15 +1,13 @@
 #include<stdio.h>
 
-/**
-*myStartupFun - to print the print function
-*
-*/
-void myStartupFun(void) _attribute_ ((constructor));
+void msg(void)__attribute__((constructor));
 
 /**
-*myStartupFun - implements myStartupFun
+*@msg - prints a specific message
+*
+*Return : No return
 */
-void myStartupFun(void)
+void msg(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
