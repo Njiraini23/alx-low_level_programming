@@ -3,7 +3,7 @@
 void msg(void)__attribute__((constructor));
 
 /**
-*@msg - prints a specific message
+*msg - prints a specific message
 *
 *Return : No return
 */
