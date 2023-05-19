@@ -2,21 +2,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* binary_search - searches the value in a sortted integers
+* recursive_search - searches the value in a sortted integers
 *@array:  pointer to the first element of the array to search in
 *@size: the number of elements in an array
 *@value: the value to search for
 * Return: where the index is located
 */
 
-int binary_search(int *array, size_t size, int value)
+int recursive_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
 	size_t i;
 
 	if (array == NULL || size == 0)
 		return (-1);
-	print("searching in array");
+	printf("searching in array");
 
 	for (i = 0; i < size; i++)
 		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
