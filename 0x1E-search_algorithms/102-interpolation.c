@@ -3,9 +3,9 @@
 /**
 * interpolation_search - searches for a value in
 *a sorted array of integers
-*@array: a pointer to the first element of the array to 
-* search in
-*@size" the number of elements in array
+*@array:a pointer to the first element of
+*the array to search in
+*@size: the number of elements in array
 *@value:  the number to search for
 *Return: -1 for null and 1 for sucess
 */
@@ -22,7 +22,8 @@ int interpolation_search(int *array, size_t size, int value)
 
 	while (size)
 	{
-		f = (double)(high - low) / (array[high] - array [low]) * (value - array[low]);
+		f = (double)(high - low) / (array[high] - array[low]) *
+			(value - array[low]);
 		pos = (size_t)(low + f);
 		printf("Value checked array[%d]", (int)pos);
 
